@@ -1,4 +1,5 @@
 var request = require('request');
+var urllib = require('urllib');
 
 var getWeather = (latitude,longitude,callback) => {
   //The URL caome fron dark sky api ,Just login and you will get yours and apply longitude and latitude to get the
@@ -8,7 +9,7 @@ var getWeather = (latitude,longitude,callback) => {
   // More can be get through docs of DarkSky website...
   var url = 'https://api.darksky.net/forecast/863a5bf93e4279054106ff84227636f3/'+latitude+','+longitude+'?units=si&language=el';
 
-//Request is made to the url...
+
   request ({
     url : url,
     json : true
@@ -24,7 +25,6 @@ var getWeather = (latitude,longitude,callback) => {
       });
     }else{
       callback(error,undefined);
-
     }
   });
 };
