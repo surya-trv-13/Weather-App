@@ -9,7 +9,7 @@
   "author": "Surya",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.18.1",
+    "axios": "^0.21.1",
     "request": "^2.88.0",
     "request-promise": "^4.2.5",
     "urllib": "^2.34.2",
